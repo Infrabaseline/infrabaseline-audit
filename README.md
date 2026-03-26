@@ -19,11 +19,25 @@ Scan your account in under 60 seconds. Every failure maps directly to the Terraf
 
 ## Install
 
+**Option 1 — pipx (recommended for Mac/Linux, installs as a global CLI tool)**
+```bash
+brew install pipx
+pipx install infrabaseline-audit
+```
+
+**Option 2 — pip inside a virtual environment**
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install infrabaseline-audit
+```
+
+**Option 3 — pip direct (if you manage your own Python environment)**
 ```bash
 pip install infrabaseline-audit
 ```
 
-Requires Python 3.11+ and AWS credentials configured locally.
+Requires Python 3.11+ and AWS credentials configured locally (`aws configure` or `AWS_PROFILE` set).
 
 ---
 
